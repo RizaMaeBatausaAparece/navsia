@@ -17,10 +17,15 @@ class ProductFactory extends Factory
     public function definition()
     {
         return [
-            'imgUrl' => fake()->randomElement(['https://png.pngtree.com/png-vector/20191120/ourmid/pngtree-cosmetic-serum-pipette-bottle-package-png-image_2009766.jpg','https://png.pngtree.com/png-clipart/20210606/original/pngtree-3d-beauty-cosmetics-product-design-png-image_6391024.jpg','https://static.vecteezy.com/system/resources/thumbnails/024/841/285/small_2x/wireless-headphone-isolated-on-transparent-background-high-quality-bluetooth-headphone-for-advertising-and-product-catalogs-generative-ai-png.png','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8ZYQc_rqxN6OqiBlYbeKwdQ4voVFc49cTTQ&s','https://asia.canon/media/migration/shared/live/products/EN/eos_m50_m55-200_b1.png','https://www.flir.com/globalassets/industrial/instruments/condition-monitoring/acoustic-imaging/why-you-should-choose-the-flir-si2/si2-product-image.png']),
+            'imgUrl' => fake()->randomElement([
+                'https://lush.com.ph/cdn/shop/files/lush_20000218_1.jpg?v=1697477108',
+                'https://img.lazcdn.com/g/ff/kf/Sffe333438e9f4b139a8484288eb6265cg.jpg_720x720q80.jpg',
+                'https://www.lucian.store/cdn/shop/articles/IMG_1224.JPG?v=1568721007&width=1100',
+                'https://media.cnn.com/api/v1/images/stellar/prod/210203182253-perfume-gucci-bloom-eau-de-parfum.jpg?q=w_1700,h_956,x_0,y_0,c_fill'
+            ]),
             'name' => fake()->word(),
             'description' => fake()->sentence(),
-            'price' =>fake()->numberBetween(5000,10000)
+            'price' => fake()->numberBetween(5000, 10000)
         ];
     }
 }
